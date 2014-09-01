@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Envía Tu Receta</title>
+</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Inicio</a></li>
+				<li><a href="formularioReceta.html">Enviar tu Receta</a></li>
+				<li><a href="ejercicio2_contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h1>Envía Tu Receta</h1> 
+		<form action="">
+			<fieldset>
+				<legend>Datos del Autor:</legend>
+				
+				<label for="">Nombre</label>
+				
+				<input type="text" name="nombre" placeholder="Introduzca su nombre"><br>
+				<label for="">Apellido</label>
+				
+				<input type="text" name="apellido" placeholder="Introduzca su apellido"><br>
+				<label for="">País</label>
+				
+				<select name="pais" id="">
+					<option value="arg" select>Argentina</option>
+					<option value="ch">Chile</option>
+					<option value="br">Brisil</option>
+				</select><br>
+				
+				<label for="">Email</label>
+				<input type="email" name="user" placeholder="ingrese su e-mail"><br>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Recetario</legend>		
+				
+				<h2>Ingredientes</h2>
+				<div class="recipe-form-ingredients"> </div>
+					<span class="recipe-form-ingredient"> </span>
+						<label for="cantidad">Cantidad</label>
+						<input type="number" step="any" min="0" max="9999" id="cantidad"  placeholder="Ingrese la Cantidad">
+
+						<select name="tipo" id="unidad" placeholder="Unidad de Medida">
+							<option value="nada" selected="selected" disabled>Unidad de Medida</option>
+							<option value="cucharada">cucharada</option>
+							<option value="cucharadita">cucharadita</option>
+							<option value="gramo">Gramo/s</option>
+							<option value="kilo">Kilo/s</option>
+							<option value="kilogramo">kilo/s</option>
+							<option value="litro">litro/s</option>
+							<option value="mililitro">mililitro/s</option>						
+							<option value="taza">taza/s</option>
+							<option value="tazita">tazita/s</option>
+							<option value="cm3">Centímetros Cúbicos</option>
+
+						</select>
+
+						<label for="ing"></label>
+						<input type="text" id="ing"  placeholder="Ingrese el Ingrediente"><br>
+					</span>
+				</div>
+				<button id="add-recipe">+</button>
+				<div >
+					<span>
+						<label for="">Pasos</label><br>
+						<textarea name="pasos" cols="60" rows="14"></textarea><br>
+						
+						<label for="">Comentarios</label><br>
+						<textarea name="Comentarios" cols="60" rows="7"></textarea><br>
+						
+						<input type="file" multiple><br>
+						
+						<input type="submit" value="Enviar"><br>
+						
+						<input type="reset" value="Cancelar"><br>
+					</span>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
