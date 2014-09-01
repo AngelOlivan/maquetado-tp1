@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formulario</title>
+</head>
+<body>
+	<h1>Tarea formulario</h1> 
+	
+	<form action="">
+		<fieldset>
+			<legend>Datos de Usuario</legend>
+			<label for="">Nombre</label>
+			<input type="text" name="nombre" placeholder="Introduzca su nombre"><br>
+			<label for="">Apellido</label>
+			<input type="text" name="apellido" placeholder="Introduzca su apellido"><br>
+			<label for="">País</label>
+			<select name="pais" id="">
+				<option value="arg" select>Argentina</option>
+				<option value="ch">Chile</option>
+				<option value="br">Brisil</option>
+			</select><br>
+			<label for="">Email</label>
+			<input type="email" name="user" placeholder="ingrese su e-mail"><br>
+			<label for="">Contraseña</label>
+			<input type="password" name="password" placeholder="Introduzca su contraseña"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Recetario</legend>		
+			<label for="">Ingredientes</label><br>
+			<textarea name="Ingredientes" id="ing" cols="30" rows="10"></textarea><br>
+			<label for="">Pasos</label><br>
+			<textarea name="pasos" id="pass" cols="60" rows="14"></textarea><br>
+			<label for="">Comentarios</label><br>
+			<textarea name="Comentarios" id="comentarios" cols="60" rows="7"></textarea><br>
+			<input type="file" acept="sagasdfjasdf" multiple><br>
+			<label for="progress">Barra de Progreso</label>
+			<progress value="15" max="100"></progress><br>
+			<input type="submit" value="Enviar"><br>
+			<input type="reset" value="Cancelar"><br>
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

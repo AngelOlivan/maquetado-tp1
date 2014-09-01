@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>Elementos de formularios</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Elementos de formularios</h1>
+	<form action="" formmethod="get">
+		<fieldset>
+			<legend>Inputs</legend>
+			<!-- Input básico: admite texto alfanumérico. El atributo placeholder permite mostrar texto dentro del campo que se borra cuando el usuario ingresa datos. -->
+			<label for="user-name">Nombre completo:</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+			<br>
+			<!-- Email: valida internamente que el texto requerido tenga formato de email. El atributo required es booleano: si aparece el campo es requerido, si no aparece no lo es, por lo tanto no es necesario indicar el valor. Sin embargo, required="required" también es correcto -->
+			<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+			<br>
+			<!-- Password: este input ofusca los caracteres ingresados para que no puedan ser leidos. El atributo minlength indica la cantidad mínima de caracteres que el campo espera recibir. -->
+			<label>Contraseña:</label>
+			<input type="password" minlength="8" placeholder="Ingrese su contraseña" required>
+			<br>
+			<!-- Tel: Para números de teléfono. Valida el formato esperado que se indica como expresión regular en el atributo pattern. -->
+			<label>Teléfono:</label>
+			<input type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="+54 261 15X-XXX-XXX">
+			<br>
+			<!-- Number: Recibe sólo número enteros. Dependiendo del navegador, puede mostrar el teclado adecuado o un spinner para aumentar/disminuir el valor. Los atributos min y max determinan el rango, y maxlenght la cantidad de caracteres que pueden escribirse -->
+			<label>Edad:</label>
+			<input type="number" maxlenght="3" min="1" max="120">
+			<br>
+			<!-- File: Recibe uno o más archivos que se envían al enviar el formulario. El atributo accept indica qué tipo de archivos son válidos, y el atributo multiple indica que pueden subirse más de un archivo en el mismo campo --> 
+			<label>Imagen:</label>
+			<input type="file" accept="image/*" multiple>
+		</fieldset>
+		<fieldset>
+			<legend>Inputs: Checkboxes</legend>
+			<!-- Checkbox: input para indicar opciones simples o múltiples no excluyentes. Suelen usuarse para marcar opciones o preferencias cuando no son excluyentes. El atributo checked indica que va seleccionado por defecto -->
+			<label for="newsleter"><input name="newsleter" type="checkbox" checked> Deseo registrarme al newsletter</label>
+			<br>
+			<label for="SMS"><input name="SMS" type="checkbox"> Deseo recibir notificaciones por SMS</label>
+		</fieldset>
+		<fieldset>
+			<legend>Inputs: Radio Buttons</legend>
+			<!-- Radio: input para indicar opciones simples o múltiples pero excluyentes entre sí. Cuando tienen el mismo valor para el atributo name forman un radio button group donde la selección de un input anula la selección de otro -->
+			<label><input name="sex" type="radio"> Masculino</label>
+			<br>
+			<label><input name="sex" type="radio"> Femenino</label>
+		</fieldset>
+		<fieldset>
+			<legend>Selects y datalists</legend>
+			<!-- Select: menu de opciones también excluyentes. Básicamente es lo mismo que un radio button group. Se recomienda su uso cuando las opciones son demasiadas como para presentarlas como radio buttons -->
+			<label for="country">País:</label>
+			<select id="country">
+				<option value="Argelia">Argelia</option>
+				<!-- El atributo selected, como su nombre lo indica, hace que esta opción esté seleccionada por defecto (similar al checked) -->
+				<option value="Argentina" selected>Argentina</option>
+				<!-- El atributo disabled, como su nombre lo indica, deshabilita la opción para que no pueda ser seleccionada -->
+				<option value="Etcétera" disabled>Etcétera</option>
+			</select>
+			<br>
+			<!-- El atributo multiple convierte al menu en una caja de selección mútiple -->
+			<label for="country">Países:</label>
+			<select id="country" multiple>
+				<option value="Argelia">Argelia</option>
+				<!-- El atributo selected, como su nombre lo indica, hace que esta opción esté seleccionada por defecto (similar al checked) -->
+				<option value="Argentina" selected>Argentina</option>
+				<!-- El atributo disabled, como su nombre lo indica, deshabilita la opción para que no pueda ser seleccionada -->
+				<option value="Etcétera" disabled>Etcétera</option>
+			</select>
+			<br>
+			<!-- Datalist: un set de datos que se muestran como opciones del input que tiene como atributo list el id/name del elemento datalist -->
+			<label for="browser">Navegador:</label>
+			<input id="browser" name="browser" type="text" list="browserlist">
+			<datalist id="browserlist" name="browserlist">
+				<option>Chrome</option>
+				<option>Firefox</option>
+				<option>Explorer</option>
+			</datalist>
+		</fieldset>
+		<fieldset>
+			<!-- Textarea: un campo que permite ingresar texto multilínea. Los atributos rows y cols determinan alto y ancho del elemento en términos de caracteres y saltos de línea -->
+			<legend>Textarea</legend>
+			<label>Deje su comentario:</label>
+			<br>
+			<textarea rows="10" cols="100"></textarea>
+		</fieldset>
+		<fieldset>
+			<legend>Barras de progreso</legend>
+			<!-- Progress: muestra una barra de progreso. min y max definen el rango (por defecto es 0 y 1 respectivamente) y value define el valor seleccionado -->
+			Porcentaje completado: <progress value="75" max="100"></progress>
+		</fieldset>
+		<!-- Submit envía el formulario y reset lo limpia -->
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Cancelar">
+	</form>
+	<!--
+	Para tener en cuenta: muchos de estos elementos fueron definidos para HTML5 y el estándar aun no está definido. Por eso la implementación, así como el aspecto, puede variar entre navegadores.
+	
+	Para más info:
+	https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms_in_HTML
+	https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms
+	http://html5doctor.com/html5-forms-introduction-and-new-attributes/
+	http://html5doctor.com/html5-forms-input-types/
+	-->
+</body>
+</html>
