@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title>Envianos tu receta</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Envianos tu receta</h1>
+	<form action="" formmethod="get">
+	<fieldset>
+		<label for="user-name">Nombre de la receta:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Nombre de la receta" required>
+		<br>
+		<label>Foto de tu receta:</label>
+		<input type="file" accept="image/*" multiple>
+		<br>
+	</fieldset>
+	<fieldset>
+			<legend>Ingredientes: </legend>
+			<div class= "recipe-form-ingredients">
+				<span class= "recipe-form-ingredient">
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>					
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>
+					<label for= "ing"> Ingrediente </label>
+					<input type= "ingredient" id="ing">
+					<label for= "qt"> Cantidad </label>
+					<input type= "number" id="qt">
+				</span>
+					<label>Unidad </label>
+					<select id="unity">
+						<option> mg </option>
+						<option> g </option>
+						<option> kg </option>
+					</select>
+					</label>
+					<br>
+					<label> Comentarios </label>
+					<input type= "comments" id="comm">	
+	</fieldset>
+	<fieldset>	
+			<legend>Preparación: </legend>	
+			<label for="user-name">Paso 1:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Paso 1" required>
+		<br>	
+			<label for="user-name">Paso 2:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Paso 2" required>
+		<br>	
+			<label for="user-name">Paso 3:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Paso 3" required>
+		<br>	
+			<label for="user-name">Paso 4:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Paso 4" required>
+		<br>	
+			<label for="user-name">Paso 5:</label>
+		<input id="user-name" name="user-name" type="text" placeholder="Paso 5" required>
+		<br>
+		<label for= "num"> Tiempo de preparación </label>
+		<input type= "number" id="num">
+		<br>
+		<label> Comentarios </label>
+					<input type= "comments" id="comm">
+	</fieldset>
+	<fieldset>
+		<legend>Tus datos</legend>
+		<label for="user-name">Nombre autor:</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+			<br>
+			<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+	</fieldset>
+	<fieldset>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Cancelar">
+	</fieldset>
+
+
+
+	
+
+
+
+
