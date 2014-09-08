@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<fieldset>
+
+            <legend>datos del cocinero</legend>
+
+            <label for="user-name">Nombre:</label>
+
+            <input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+
+            <br>
+
+            <label>Email:</label>
+
+            <input id="user-mail" name="user-mail" type="email" placeholder="Ingrese un correo válido" required>
+
+            <br>
+
+            <label>Teléfono:</label>
+
+            <input id="user-tel" name="user-tel" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="+54 261 15X-XXX-XXX">
+
+        </fieldset>
+
+
+<fieldset>
+
+            <legend>Receta</legend>
+
+            <label for="recipe-name">Nombre:</label>
+
+            <input id="recipe-name" name="recipe-name" type="text" placeholder="Nombre de la receta" required>
+
+            <br>
+
+            <label>Suba una imagen de la receta:</label>
+
+            <input type="file" accept="image/*" multiple>
+
+        </fieldset>
+
+
+<fieldset>
+
+ <legend>Ingredientes:</legend>
+
+  <div class="recipe-form-ingredients">
+
+      <span class="recipe-form-ingredient"> 
+
+        <label for="ingredient-one">1</label>
+
+        <input type="text" id="ingredient-one" name="ingredient-one" placeholder="Ingrese ingrediente" required>
+
+  </span>
+
+    <span class="recipe-form-ingredient"> 
+
+        
+
+        <label for="qt">Cantidad</label>
+
+        <input type="number" id="qt" name="qt">
+
+   </span>
+
+   <span class="recipe-form-ingredient"> 
+
+        <label for="unit">Unidad</label>
+
+       <select id="unit">
+
+                   <option value="miligramos">Miligramos</option>
+
+                <option value="gramos" selected>Gramos</option>
+
+                <option value="Kilo gramos" selected>Kilo gramos</option>    
+
+            </select>
+
+     </span>
+
+     
+
+  <span class="recipe-form-ingredient"> 
+
+        <label for="ingredient-two">2</label>
+
+        <input type="text" id="ingredient-two" name="ingredient-two" placeholder="Ingrese ingrediente" required>
+
+  </span>
+
+    <span class="recipe-form-ingredient"> 
+
+        <label for="qt">Cantidad</label>
+
+        <input type="number" id="qt" name="qt">
+
+  </span>
+
+  <span class="recipe-form-ingredient"> 
+
+        <label for="unit">Unidad</label>
+
+         <select id="unit">
+
+                   <option value="miligramos">Miligramos</option>
+
+                <option value="gramos" selected>Gramos</option>
+
+                <option value="Kilo gramos" selected>Kilo gramos</option>    
+
+            </select>
+
+  </span>
+
+  </div>
+
+     <button id=”add-recipe”>
+
+  +
+
+          </button>
+
+        </fieldset>
+
+
+<fieldset>
+
+    <legend>Comentario</legend>
+
+        <label for="comment-name"></label>
+
+        <input id="comment-name" name="comment-name" type="text" placeholder="Ingrese comentario" required>
+
+        </fieldset>
+
+
+        <button id=”add-recipe”>
+
+  Añadir receta
+
+          </button>
+
+
