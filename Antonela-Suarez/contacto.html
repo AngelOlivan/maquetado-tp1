@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Contacto</title>
+</head>
+<body>
+	<h1>Top Recetas</h1>
+	<nav>
+		<ul>
+			<li><a href="recetas.html">Recetas</a></li>
+			<li><a href="formulario.html">Subi tu receta</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<h2>Contactenos</h2>
+	<form action="form" method="get"> 
+		<label for="user-name">Nombre completo:</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+	<br>
+		<label>Edad:</label>
+			<input type="number" min="1" max="999"> 
+		<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+	<br>
+		<label>Pais:</label>
+			<select id="country">
+				<option value="argentina" selected>Argentina</option>
+				<option value="brasil">Brasil</option>				
+				<option value="bolivia">Bolivia</option>
+				<option value="chile">Chile</option>
+				<option value="colombia">Colombia</option>				
+				<option value="costarica">Costa Rica</option>
+				<option value="cuba">Cuba</option>
+				<option value="ecuador">Ecuador</option>
+				<option value="elsalvador">El Salvador</option>
+				<option value="españa">España</option>
+				<option value="honduras">Honduras</option>
+				<option value="nicaragua">Nicaragua</option>
+				<option value="panama">Panama</option>
+				<option value="puertorico">Puerto Rico</option>
+				<option value="uruguay">Uruguay</option>
+				<option value="venezuela">Venezuela</option>
+			</select>
+	<br>
+		<label>Deje su mensaje:</label>
+	<br>
+			<textarea rows="20" cols="70" required></textarea>
+	<br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Cancelar">
+		</form>
+		<footer>
+			<p><small>Condiciones de uso Política de Privacidad © 2014 por Intellectual Reserve, Inc. Todos los derechos reservados. © Copyright 2014 Grupo Top Recetas - Todos los derechos reservados - Diseño y D. Creativa Antonela Suarez</small></p>
+		</footer>
+	</body>
+</html>

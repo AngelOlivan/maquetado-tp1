@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="UTF-8"/>
+	<title>formulario</title>
+</head>
+<body>
+	<h1>Top Recetas</h1>
+	<nav>
+		<ul>
+			<li><a href="recetas.html">Recetas</a></li>
+			<li><a href="formulario.html">Subi tu receta</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<h2>Mi Receta</h2>
+	<form action="form" method="get"> 
+		<label for="user-name">Autor:</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+	<br>
+		<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+	<fieldset>
+		<legend>Ingredientes: </legend>
+		<div class="resipe-from-ingredients">
+			<span class="resipe-from-ingredient">
+			<label>Cantidad:</label>
+			<input type="number" step="any" min="0" max="9999" required> 
+		</span>
+			<label>medida:</label>
+				<select id="units">
+					<option value="mililitro">ml</option>
+					<option value="litro">lt</option>
+					<option value="centimetroscubico">cc</option>
+					<option value="onza">oz</option>
+					<option value="jarra">gal</option>
+					<option value="taza">tz</option>
+					<option value="tacita">tcita</option>
+					<option value="cucharada">cdas</option>
+					<option value="cucharadita">cditas</option>
+					<option value="miligramo">mg</option>
+					<option value="gramo" selected>gr</option>
+					<option value="kilogramo">kl</option>
+					<option value="libra">lbs</option>
+					<option value="pizca">pizca</option>
+				</select>
+			<label>de:</label>
+		<textarea rows="1" cols="50" required></textarea>
+	<label>indicaciones</label>
+		<textarea rows="1" cols="50"></textarea>
+<button id="add-recibe">
+	+
+</button>
+	<br>
+</div>
+	</fieldset>
+	<br>
+		<label>Pasos:</label>
+	<br>
+			<textarea rows="10" cols="100" required></textarea>
+	<br>
+		<label>Comentarios:</label>
+	<br>
+			<textarea rows="5" cols="100"></textarea>
+	<br>
+		<label>Imagen:</label>
+			<input type="file" accept="image/*" multiple required>
+	<br>
+		<label class="progress">Porcentaje de completado</label>
+			<progress value="15" max="100"></progress>
+	<br>
+	<label>Tiempo de cocción:</label>
+		<input type="number" min="0" max="99"> 
+	<label>horas</label>
+		<input type="number" min="1" max="999"> 
+	<label>minutos</label>
+	<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+		</form>
+		<footer>
+			<p><small>Condiciones de uso Política de Privacidad © 2014 por Intellectual Reserve, Inc. Todos los derechos reservados. © Copyright 2014 Grupo Top Recetas - Todos los derechos reservados - Diseño y D. Creativa Antonela Suarez</small></p>
+		</footer>
+	</body>
+</html>
