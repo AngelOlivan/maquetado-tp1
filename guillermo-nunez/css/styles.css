@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url("normalize.css");
+
+body {
+    width: 70%;
+    /* margin: 0 auto 0 auto; /* arriba, derecha, abajo, izquierda */
+
+    /*margin-top:0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; 
+    */
+
+    margin: 0 auto; /* arriba-abajo, derecha-izquierda */
+
+    background: #e5e5e5;
+
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+aside {
+    /*border-top-width: 1px;
+    border-top-color: #ccc;*/
+    border: 1px #f2f200 solid; 
+    background: #f8f8ee;
+    border-radius: 4px;
+}
