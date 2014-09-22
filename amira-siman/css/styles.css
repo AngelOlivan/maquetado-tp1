@@ -1,5 +1,6 @@
 @import url("normalize.css");
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
 body {
 	background: orange;
@@ -9,4 +10,9 @@ body {
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Oswald";
+
 }
