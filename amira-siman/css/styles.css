@@ -1,0 +1,12 @@
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	background: orange;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	width: 70%; 
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
