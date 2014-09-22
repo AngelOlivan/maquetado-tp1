@@ -18,16 +18,27 @@ body {
 
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 
+    color: 444;
+
 }
 
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
+    color: coral;
 }
 
 aside {
+    padding: 0 1em;
+}
+
+.consejos {
     /*border-top-width: 1px;
     border-top-color: #ccc;*/
     border: 1px #f2f200 solid; 
     background: #f8f8ee;
     border-radius: 4px;
+}
+
+.consejos h3 {
+    color: #616140;
 }
