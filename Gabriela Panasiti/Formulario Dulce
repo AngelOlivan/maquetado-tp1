@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="UTF-8"/>
+	<title>formulario</title>
+</head>
+<body>
+	<h1>Mis Recetas</h1>
+	<form action="form" method="get"> 
+		<label for="user-name">Nombre de usuario</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre" required>
+	<br>
+		<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+	<br>
+		<label>Ingredientes:</label>
+	<br>
+			<textarea rows="15" cols="50" required></textarea>
+	<br>
+		<label>Pasos:</label>
+	<br>
+			<textarea rows="20" cols="100" required></textarea>
+	<br>
+		<label>Comentarios:</label>
+	<br>
+			<textarea rows="10" cols="100"></textarea>
+	<br>
+		<label>Imagen:</label>
+			<input type="file" accept="image/*" multiple>
+	<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Cancelar">
+</form>
+</body>
+</html>
