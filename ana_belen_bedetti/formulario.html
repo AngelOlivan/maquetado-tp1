@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1> <strong>Cocina vegana para principiantes</strong> </h1>
+
+	<nav>
+		<ul>
+			<li> <a href="index.html"> Inicio </a> </li>
+			<li> <a href="recetas.html"> Recetas </a> </li>
+			<li> <a href="index.html"> Nutrición </a> </li>
+			<li> <a href="index.html"> Artículos </a> </li>
+			<li> <a href="formulario.html"> Subir receta </a> </li>
+			<li> <a href="index.html"> Consejos gastronómicos </a> </li>
+			<li> <a href="contacto.html"> Contacto </a> </li>
+		</ul>
+	</nav>
+
+	<h1>Formulario</h1>
+	<form action="" formmethod="get">
+		<fieldset>
+			<label for="user-name">Nombre y apellido:</label>
+			<input id="user-name" name="user-name" type="text" placeholder="Ingrese su nombre y apellido" required>
+			<br>
+			<label>Email:</label>
+			<input type="email" placeholder="Ingrese un correo válido" required>
+			<br>
+			<label for="categoria">Categoría:</label>
+			<select id="listadocategoria" required>
+				<option value="Express" selected>Express</option>
+				<option>Pastas</option>
+				<option>Ensaladas</option>
+				<option>Tartas</option>
+				<option>Dulces</option>
+				<option>Panes y pizzas</option>
+				<option>Guisos</option>
+				<option>Otra</option>
+			</select>
+			<br>
+			<label>Título:</label>
+			<input type="title" placeholder="Título receta" required>
+			<br>
+			<label>Dificultad:</label>
+			<label><input name="dificultad" type="radio">Fácil</label> 
+			<label><input name="dificultad" type="radio">Intermedia</label> 
+			<label><input name="dificultad" type="radio">Difícil</label> 
+			<br>
+			<label>Tiempo de preparación:</label>
+			<input type="number" maxlenght="3" step="5" min="5" max="340" value="30" selected> <label>minutos</label>
+			<br>
+			<fieldset> 
+				<legend> Ingredientes: </legend>
+				<div class="recipe-form-ingredients">
+					<span class="recipe-form-ingredient">
+						<label for="qt"> Cantidad </label>
+						<input type="number" id="qt" min="0.5" step="0.5">
+						<label> Unidad </label>
+						<select id="unity">
+							<option>gramos</option>
+							<option>centímetros cúbicos</option>
+							<option>cucharadas</option>
+							<option>cucharaditas</option>
+						</select>
+						<label>Ingrediente</label>
+						<input type="text">
+						<label>Aclaración</label>
+						<input type="text">
+					</span>
+				<button id="add-ingredient"> + </button>
+				</div>
+				<br>
+				<div class="recipe-form-ingredients">
+					<span class="recipe-form-ingredient">
+						<label for="qt"> Cantidad </label>
+						<input type="number" id="qt">
+						<label> Unidad </label>
+						<select id="unity">
+							<option>gramos</option>
+							<option>centímetros cúbicos</option>
+							<option>cucharadas</option>
+							<option>cucharaditas</option>
+						</select>
+						<label>Ingrediente</label>
+						<input type="text">
+						<label>Aclaración</label>
+						<input type="text">
+					</span>
+				<button id="add-ingredient"> + </button>
+				</div>
+				<br>
+				<div class="recipe-form-ingredients">
+					<span class="recipe-form-ingredient">
+						<label for="qt"> Cantidad </label>
+						<input type="number" id="qt">
+						<label> Unidad </label>
+						<select id="unity">
+							<option>gramos</option>
+							<option>centímetros cúbicos</option>
+							<option>cucharadas</option>
+							<option>cucharaditas</option>
+						</select>
+						<label>Ingrediente</label>
+						<input type="text">
+						<label>Aclaración</label>
+						<input type="text">
+					</span>
+				<button id="add-ingredient"> + </button>
+				</div>				
+			</fieldset>
+			<br>
+			<label>Preparación:</label>
+			<br>
+			<textarea rows="10" cols="100" required></textarea>
+			<br>
+			<label>Imagen:</label>
+			<input type="file" accept="image/*" multiple>
+			<br>			
+		</fieldset>
+		<br>
+		<label>Porcentaje completado: </label>
+			<progress value="75" max="100"></progress>
+			<br>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+	</form>
+</body>
+<footer>
+	<p> Volver al <a href="index.html">inicio</a> </p>
+</footer>
+</html>
+
