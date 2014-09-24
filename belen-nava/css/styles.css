@@ -1,0 +1,26 @@
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+
+body {
+	width:70%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: color:#FFFFCC;
+
+h1,h2,h3,h4 {
+	font-family: "Comfortaa";
+}
+
+ul {
+	font-family: "Open";
+}
+
+aside {
+  background: #f8f8ee;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+ padding: 0 1m;
+}
