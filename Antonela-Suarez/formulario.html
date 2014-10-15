@@ -5,14 +5,17 @@
 	<title>formulario</title>
 </head>
 <body>
+	<header>
 	<h1>Top Recetas</h1>
-	<nav>
+	<nav id="menu-principal">
 		<ul>
+			<li><a href="index.html">Inicio</a></li>
 			<li><a href="recetas.html">Recetas</a></li>
 			<li><a href="formulario.html">Subi tu receta</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="contacto.html">Contactenos</a></li>
 		</ul>
 	</nav>
+	</header>
 	<h2>Mi Receta</h2>
 	<form action="form" method="get"> 
 		<label for="user-name">Autor:</label>
@@ -45,7 +48,7 @@
 					<option value="pizca">pizca</option>
 				</select>
 			<label>de:</label>
-		<textarea rows="1" cols="50" required></textarea>
+		<textarea rows="1" cols="50" placeholder="Ingrediente" required></textarea>
 	<label>indicaciones</label>
 		<textarea rows="1" cols="50"></textarea>
 <button id="add-recibe">
@@ -57,11 +60,13 @@
 	<br>
 		<label>Pasos:</label>
 	<br>
-			<textarea rows="10" cols="100" required></textarea>
+			<textarea rows="10" cols="100" required>
+			</textarea>
 	<br>
 		<label>Comentarios:</label>
 	<br>
-			<textarea rows="5" cols="100"></textarea>
+			<textarea rows="5" cols="100">
+			</textarea>
 	<br>
 		<label>Imagen:</label>
 			<input type="file" accept="image/*" multiple required>
